@@ -12,7 +12,7 @@ import { NgIf } from '@angular/common';
     </div>
     <ng-template #content>
       <div>Your actual content goes here</div>
-</ng-template> s
+</ng-template>
   `,
   standalone: true,
   imports: [LoadingSkeletonComponent, NgIf],
@@ -23,7 +23,7 @@ export class App {
   ngOnInit() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 300000); // Simulate a 3-second load time
+    }, 3000); // Simulate a 3-second load time
   }
 }
 

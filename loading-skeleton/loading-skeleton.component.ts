@@ -11,8 +11,7 @@ import {
   standalone: true,
   imports: [JsonPipe, NgClass, NgFor],
   templateUrl: './loading-skeleton.component.html',
-  styleUrls: ['./loading-skeleton.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./loading-skeleton.component.scss']
 })
 export class LoadingSkeletonComponent {
   @Input() rows: number = 3;
