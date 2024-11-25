@@ -1,0 +1,11 @@
+<div class="skeleton">
+  <div [ngClass]="disabledHeader ? 'skeleton-header' : ''"></div>
+  <div class="skeleton-body">
+    <div
+      *ngFor="let row of rowArray"
+      class="skeleton-line"
+      [class.short]="row % 2 === 0"
+    >
+    </div>
+  </div>
+</div>
